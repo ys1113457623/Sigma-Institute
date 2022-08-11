@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@108;200;300;400;500;%20600;700;%20880;900&display=20swap%27');
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+      
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+h1 {
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+
+}
+
+span {
+
+     font-size: .9rem;
+     color: #757573;
+}
+
+h6 {
+
+    font-size: 1.1rem;
+    color: rgb(24, 24, 29);
+
+}
+
+nav {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 10vw ;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+}
+
+nav img{
+
+   width: 150px;
+   cursor: pointer;
+
+}
+
+nav .navigation ul{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+
+   list-style: none;
+   margin-left:  30px;
+}
+
+nav .navigation ul li a{
+
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+
+    
+
+}
+
+nav .navigation ul li a:hover{
+
+    color: red;
+}
+
+#HOME{
+
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url("images/happy-teacher-with-students-background.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+#HOME h2{
+
+     color: white;
+     font-size: 2.2rem;
+     letter-spacing: 1px;
+}
+
+#HOME p{
+
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#HOME .btn{
+
+     margin-top: 30px;
+}
+
+
+
+
+#HOME a{
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#HOME a.Red{
+
+    color: white;
+    background-color: #800000;
+    transition: 0.3s ease;
+
+
+}
+
+#HOME a.Red:hover{
+
+    color: #800000;
+    background-color: white;
+
+}
+
+#HOME a.White{
+
+    color: white;
+    background-color: black;
+    transition: 0.3s ease;
+
+
+}
+
+#HOME a.White:hover{
+
+    color: black;
+    background-color: white;
+
+}
+
+#features {
+
+    padding: 5vw, 8vw, 0vw, 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+
+    background-color: #800000;
+    text-align: start;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+#features .fea-box i{
+
+    font-size:  40px;
+    color: white;
+    margin-left: 160px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#features .fea-box h3{
+
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding: 13px, 0px, 7px, 0px;
+    margin-bottom: 15px;
+    
+}
+
+#features .fea-box p{
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 8px;
+
+}
+    
+#course { 
+
+    padding: 8vw 8vw 0vw 8vw;
+    text-align: center
+
+}
+
+#course .course-box{
+
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+
+}
+
+#course .courses { 
+
+    text-align: start;
+    background: whitesmoke;
+    height: 100%;
+    position: relative;
+
+}
+
+#course .courses img{
+
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+#course  .courses .details{
+
+    padding: 15px 15px 0px 15px;
+
+
+}
+
+#course  .courses .details i{
+
+    color: maroon;
+    font-size: .9rem;
+}
+
+#course  .courses .cost{
+
+    background-color: #800000;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 160px;
+}
+
+#ABOUT-HOME{
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+#about-container .about-img{
+
+    width: 60%;
+    height: 30%;
+ 
+}
+
+#about-container .about-text{
+
+    background-image: url(images/vcvc.png);
+    background-size: 660px;
+    margin-left: 50px;
+    text-transform: capitalize;
+    
+    
+    
+}
+
+#about-container .about-text a{
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    background-color: #800000;
+    color: white;
+    border-radius: 5px;
+}
+
+#photos{
+
+    text-align: center;
+    margin-top: 60px;
+    background-image: url(images/mmmn.png);
+    height: 600px;
+    width: 1500px;
+    background-size: cover;
+
+    
+    
+}
+
+.slider{
+
+    
+    width: 800px;
+    height: 400px;
+    background: url(images/1.jpeg);
+    margin: 100px auto;
+    animation: slide 10s infinite;
+    margin-right: 800px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    
+    
+    
+    
+}
+
+@keyframes slide{
+    25%{
+        background: url(images/2.jpeg);
+    }
+    50%{
+        background: url(images/3.jpeg);
+    }
+    75%{
+        background: url(images/4.jpeg);
+    }
+    100%{
+        background: url(images/2.jpeg);
+    }
+
+
+}
+
+footer{
+
+    padding: 8vw;
+    background-color: #800000;
+    background-size: cover;
+    background-position: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .foo-col{
+
+    padding: 40px;
+    margin-top: 100px;
+
+
+}
+
+footer h3{
+
+    color: white;
+    font-weight: 600s;
+    justify-content: space-between;
+
+}
+
+footer li{
+
+    color: white;
+}
+
+footer i{
+
+    color: white;
+    
+}
+
+footer  i{
+
+    color: white;
+    justify-content: space-between;
+    column-gap: 2rem;
+
+}
+
+footer p{
+
+    color: white;
+}
+
+footer a{
+
+    color: white;
+    column-gap: 2rem;
+}
+
+
+    
+#FEE-HOME{
+
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url("images/fees.png");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+#info{
+    text-align: center;
+
+}
+
+#info h1{
+    text-transform: capitalize;
+    margin-top: 40px;
+
+}
+
+
+
+
+#info h2{
+    text-transform: capitalize;
+    margin-top: 10px;
+
+}
+
+#info p{
+
+    margin-top: 50px;
+    font-size: 700;
+    margin-bottom: 70px;
+    text-align: left;
+    margin-left: 30px;
+  
+
+}
+
+#info2 h2{
+
+    text-transform: capitalize;
+    margin-top: 10px;
+  
+    text-align: center;
+}
+
+#info2 p{
+
+    margin-top: 50px;
+    font-size: 700;
+    margin-bottom: 70px;
+    text-align: left;
+    margin-left: 30px;
+
+
+}
+
+#info2 .pic2 img{
+
+    margin-left: 50px;
+    size: 200px;
+    margin-bottom: 100px;
+}
+
+#payment{
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#payment-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+#payment-container .payment-img{
+
+    width: 60%;
+    height: 30%;
+    size: 100px;
+    margin-bottom: 100px;
+ 
+}
+#payment-container .payment-text{
+
+  
+    margin-left: 50px;
+    text-transform: capitalize;
+    font-size: larger;
+    
+    
+    
+}
+
+#CONTACT-HOME{
+
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url("images/ree.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+} 
+
+#CONTACT-HOME h2{
+
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#CONTACT-HOME p{
+
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 600px;
+ 
+}
+
+#contact{
+
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact .touch{
+
+    width: 350px;
+}
+
+#contact .touch h2{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 16px;
+
+}
+
+#contact .touch p{
+  
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid;
+
+}
+
+#contact .touch h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+#contact .form{
+
+    width: 60%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+
+
+}
+
+#contact .form h4{
+
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact .form p{
+  
+
+    padding-bottom: 25px;
+    border-bottom: 1px solid;
+
+}
+
+#contact .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+#contact .form .form-row input{
+
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+
+}
+
+#contact .form .form-col input,
+#contact .form .form-col textarea{
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form button{
+    font-size: .9rem;
+    padding: 25px 13px;
+    background: #800000;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+#A-home{
+
+    background-image: linear-gradient(rgba(22, 16, 78, 0.3),rgba(5, 4, 46, 0.7)), url("images/ioio.jpeg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#A-home h2{
+    text-align: center;
+    color: white;
+}
+
+#A-home{
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+#A-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+
+#A-container .A-image{
+    width: 30%;
+    height: 30%;
+    size: 20px;
+    margin-bottom: 150px;
+
+ 
+}
+#A-container .A-text{
+
+    width: 40%;
+    margin-left: 250px;
+    text-transform: capitalize;
+    font-size: medium;
+    text-align: start;
+    margin-bottom: 90px;
+ 
+    
+    
+    
+}
+
+#map iframe{
+
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+#COURSES-HOME{
+
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5, 4, 46, 0.7)), url("images/tt.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+#COURSES-HOME h2{
+
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#Cou { 
+
+    padding: 8vw 8vw 0vw 8vw;
+    text-align: center;
+}
+
+#Cou .cou-box{
+
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+
+}
+
+#Cou .couses { 
+
+    text-align: start;
+    background: whitesmoke;
+    height: 100%;
+    position: relative;
+
+}
+
+#Cou .couses img{
+
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+#Cou  .couses .de{
+
+    padding: 15px 15px 0px 15px;
+
+
+}
+
+#Cou  .couses .de i{
+
+    color: maroon;
+    font-size: .9rem;
+}
+
+
+
+#Cou  .couses .cost{
+
+    background-color: #800000;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 160px;
+}
+
+#Cou  .couses .b  a{
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 20px;
+    background-color: #800000;
+    color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+@media ( max-width: 769px  ) {
+    
+}
