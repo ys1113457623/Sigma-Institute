@@ -733,6 +733,7 @@ footer a{
 #map iframe{
 
     width: 90%;
+    height: 480px;
     margin-left: 70px;
     margin-right: 50px;
     margin-bottom: 50px;
